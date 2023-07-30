@@ -13,7 +13,7 @@ class Suggest(commands.Cog):
         name="suggest",
         description="Suggests Something",
     )
-    async def suggest(self, ctx, suggestion: Option(str, "Expain your suggestion as well as possible.", required=True)):
+    async def suggest(self, ctx, suggestion: Option(str, "Explain your suggestion as well as possible.", required=True)):
 
         embed = discord.Embed(
             title=f"Suggestion by {ctx.author.name}",
